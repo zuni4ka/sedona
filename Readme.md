@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Maria Plieshka](https://up.htmlacademy.ru/htmlcss/23/user/585879).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Дос](https://htmlacademy.ru/profile/andreydos).
 
 ---
 
