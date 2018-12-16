@@ -19,7 +19,7 @@
       </nav>
     </header>
     <main class="container">
-      
+
       <h1 class="visually-hidden">Все о Седоне.</h1>
       
       <section class="features">
@@ -65,7 +65,25 @@
       <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <!-- Здесь будет форма -->
+        <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="appointment-data">
+              <label for="checkin-date">Дата заезда:</label>
+            <input type="text" name="checkin-date" value="" placeholder="24 апреля 2019">
+          </p>
+          <p class="appointment-data">
+              <label for="checkout-date">Дата выезда: </label>
+            <input type="text" name="checkout-date" value="" placeholder="30 апреля 2019">
+          </p>
+          <p class="appointment-data">
+              <label for="guests-amount">Взрослые: </label>
+            <input type="number" name="guests-amount" value="" placeholder="1">
+          </p>
+          <p class="appointment-data">
+              <label for="kids-amount">Дети:</label>
+            <input type="number" name="kids-amount" value="" placeholder="0">
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
