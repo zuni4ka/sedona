@@ -1,0 +1,399 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body, ul, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+input,
+button {
+    color: inherit;
+    font-size: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3)
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Navigation */
+
+.main-navigation {
+    height: 56px;
+    background-color: #ffffff
+}
+
+.site-navigation {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+
+.site-navigation-item {
+    min-width: 140px;
+    height: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.site-navigation-link {
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.welcome-teaser {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 508px; 
+}
+
+.welcome-teaser-text {
+    margin-top: -4px;
+}
+
+.welcome-teaser-image {
+    background-image: url("../img/mountain-mask.svg"), url("../img/background-moutains.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 451px, -55px;
+}
+
+.advantages-section {
+    background-color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.advantages-section-text-one {
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 27px;
+    font-size: 21px;
+}
+
+.advantages-section-text-two {
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    width: 490px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+/* Hotels Search */
+
+.search-header {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 140px;
+}
+
+.search-header-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.search-header-text {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.search-form {
+    position: relative;
+    margin-top: -86px;
+    width: 568px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-form-title {
+    background-color: #7B6458;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 21px;
+    padding-bottom: 27px;
+}
+
+.search-form-body {
+    padding-top: 55px;
+    padding-bottom: 25px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form-row {
+    display: flex;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+.input-wrap {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+}
+
+.search-form-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    min-width: 112px;
+}
+
+.search-form-control {
+    background-color: #f2f2f2;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 38px;
+    padding-left: 12px;
+    width: 100%;
+}
+
+.search-form-control-calender {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10px;
+}
+
+.kids-amount-text {
+    min-width: 60px;
+}
+
+.input-amount {
+    min-width: 38px;
+}
+
+.search-form-add-guests-button {
+    border: 0;
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    height: 38px;
+    min-width: 38px;
+}
+
+.search-form-row-reduced {
+    width: 50%;
+}
+
+.search-form-submit {
+    width: 100%;
+    background-color: #78B3D6;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-top: 22px;
+    height: 60px;
+}
+
+.search-map {
+    margin-top: -396px;
+    height: 473px;
+    overflow: hidden;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: #ffffff;
+}
+
+.footer-social-button-list {
+    margin-top: 36px;
+    display: flex;
+    list-style: none;
+}
+
+.footer-hashtag {
+    padding-left: 132px;
+    margin-top: 45px;
+    min-width: 400px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 104px;
+    margin-top: 50px;
+    min-width: 400px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.dev-logo {
+    padding-left: 10px;
+    margin-top: -10px;
+    min-width: 120px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    height: 48px;
+    min-width: 48px;
+    background-color: #78B3D6;
+}
+
+/* Hotels Catalog */
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    display: flex;
+    background-color: #ffffff;
+    border-bottom: #f2f2f2 1px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 72px;
+    padding-right: 70px;
+}
+
+.catalog-item-image{
+    align-self: center;  
+}
+
+.catalog-item-description{
+    margin-left: 30px;
+}
+
+.catalog-item-title {
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.catalog-category {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.catalog-item-price {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 35px;
+}
+
+.catalog-item-buttons-list {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 14px;
+}
+
+.catalog-item-button {
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 16px;
+    padding-left: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.catalog-item-details{
+    background-color: #78B3D6;
+}
+
+.catalog-item-reservation {
+    margin-left: 7px;
+    background-color: #7B6458;
+}
+
+.catalog-item-rating {
+    margin-left: auto;
+    text-align: right;
+}
+
+.catalog-item-stars {
+    margin-left: 3px;
+}
+
+.catalog-item-rating-text {
+    margin-top: 42px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 15px;
+    padding-left: 16px;
+    text-transform: uppercase;
+    background-color: #F3F3F3;
+}
