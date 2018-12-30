@@ -56,6 +56,40 @@ body {
     overflow: hidden;
 }
 
+.text-interactive:hover {
+    color: #81B3D2;
+}
+
+.text-interactive:active {
+    opacity: 0.3;
+}
+
+.button-blue {
+    background-color: #78B3D6;
+}
+
+.button-blue:hover {
+    background-color: #669EC0;
+}
+
+.button-blue:active {
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown {
+    background-color: #7B6458
+}
+
+.button-brown:hover {
+    background-color: #604E43;
+}
+
+.button-brown:active {
+    background-color: #503E33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 /* Navigation */
 
 .main-navigation {
@@ -71,23 +105,37 @@ body {
 }
 
 .site-navigation-item {
-    min-width: 140px;
+    min-width: 25%;
     height: 100%;
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
+    align-items: center;
+}
+
+.site-navigation-item:nth-child(1) {
+    padding-left: 62px;
+}
+
+.site-navigation-item:nth-child(3) {
+    justify-content: flex-end;
+}
+
+.site-navigation-item:nth-child(4) {
+    padding-right: 62px;
+    justify-content: flex-end;
 }
 
 .site-navigation-link {
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
-    height: 100%;
-    display: flex;
-    align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.site-navigation-link__current {
+    color: #766357;
 }
 
 .main-header-logo {
@@ -354,13 +402,13 @@ body {
     margin-left: 35px;
 }
 
-.catalog-item-buttons-list {
+.controls-group {
     display: flex;
     align-items: flex-end;
     margin-top: 14px;
 }
 
-.catalog-item-button {
+.controls-group-button {
     display: inline-block;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -370,13 +418,8 @@ body {
     color: #ffffff;
 }
 
-.catalog-item-details{
-    background-color: #78B3D6;
-}
-
 .catalog-item-reservation {
     margin-left: 7px;
-    background-color: #7B6458;
 }
 
 .catalog-item-rating {
