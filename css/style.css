@@ -275,7 +275,7 @@ body {
 
 .search-form-control:focus {
     background-color: #ffffff;
-    border: #E6E6C5 solid 2px;
+    outline: #E6E6C5 solid 2px;
 }
 
 .search-form-control-calender {
