@@ -56,6 +56,40 @@ body {
     overflow: hidden;
 }
 
+.text-interactive:hover {
+    color: #81B3D2;
+}
+
+.text-interactive:active {
+    opacity: 0.3;
+}
+
+.button-blue {
+    background-color: #78B3D6;
+}
+
+.button-blue:hover {
+    background-color: #669EC0;
+}
+
+.button-blue:active {
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown {
+    background-color: #7B6458
+}
+
+.button-brown:hover {
+    background-color: #604E43;
+}
+
+.button-brown:active {
+    background-color: #503E33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 /* Navigation */
 
 .main-navigation {
@@ -71,23 +105,37 @@ body {
 }
 
 .site-navigation-item {
-    min-width: 140px;
+    min-width: 25%;
     height: 100%;
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
+    align-items: center;
+}
+
+.site-navigation-item:nth-child(1) {
+    padding-left: 62px;
+}
+
+.site-navigation-item:nth-child(3) {
+    justify-content: flex-end;
+}
+
+.site-navigation-item:nth-child(4) {
+    padding-right: 62px;
+    justify-content: flex-end;
 }
 
 .site-navigation-link {
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
-    height: 100%;
-    display: flex;
-    align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.site-navigation-link__current {
+    color: #766357;
 }
 
 .main-header-logo {
@@ -161,7 +209,9 @@ body {
 }
 
 .search-form {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     margin-top: -86px;
     width: 568px;
     margin-left: auto;
@@ -169,6 +219,8 @@ body {
 }
 
 .search-form-title {
+    display: block;
+    width: 100%;
     background-color: #7B6458;
     color: #ffffff;
     text-align: center;
@@ -208,7 +260,7 @@ body {
 }
 
 .search-form-control {
-    background-color: #f2f2f2;
+    background-color: #EFF2D4;
     border: 0;
     text-transform: uppercase;
     font-weight: bold;
@@ -217,11 +269,28 @@ body {
     width: 100%;
 }
 
+.search-form-control:hover {
+    background-color: #EAEBCB;
+}
+
+.search-form-control:focus {
+    background-color: #ffffff;
+    outline: #E6E6C5 solid 2px;
+}
+
 .search-form-control-calender {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
     right: 10px;
+}
+
+.search-form-control-calender:hover {
+    fill:#000000;
+}
+
+.search-form-control-calender:active {
+    fill:#7DB4AE;
 }
 
 .kids-amount-text {
@@ -234,11 +303,21 @@ body {
 
 .search-form-add-guests-button {
     border: 0;
-    background-color: #f2f2f2;
+    background-color: #EFF2D4;
+    color: #B3A986;
     font-weight: bold;
     text-align: center;
     height: 38px;
     min-width: 38px;
+}
+
+.search-form-add-guests-button:hover {
+    color:#000000;
+    background-color: #EAEBCB;
+}
+
+.search-form-add-guests-button:active {
+    color:#7DB5B2;
 }
 
 .search-form-row-reduced {
@@ -256,7 +335,6 @@ body {
 }
 
 .search-map {
-    margin-top: -396px;
     height: 473px;
     overflow: hidden;
 }
@@ -301,6 +379,14 @@ body {
     min-width: 120px;
 }
 
+.dev-logo:hover path {
+    fill:#7DB4AE;
+}
+
+.dev-logo:active path {
+    fill:#C7BD94;
+}
+
 .social-button {
     display: flex;
     align-items: center;
@@ -309,6 +395,10 @@ body {
     height: 48px;
     min-width: 48px;
     background-color: #78B3D6;
+}
+
+.social-button:active img {
+    opacity: 0.3;
 }
 
 /* Hotels Catalog */
@@ -354,13 +444,13 @@ body {
     margin-left: 35px;
 }
 
-.catalog-item-buttons-list {
+.controls-group {
     display: flex;
     align-items: flex-end;
     margin-top: 14px;
 }
 
-.catalog-item-button {
+.controls-group-button {
     display: inline-block;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -370,13 +460,8 @@ body {
     color: #ffffff;
 }
 
-.catalog-item-details{
-    background-color: #78B3D6;
-}
-
 .catalog-item-reservation {
     margin-left: 7px;
-    background-color: #7B6458;
 }
 
 .catalog-item-rating {
