@@ -162,6 +162,8 @@ body {
     background-position-y: 451px, -55px;
 }
 
+/* City features and advantages */
+
 .advantages-section {
     background-color: #ffffff;
     padding-top: 60px;
@@ -175,6 +177,7 @@ body {
     line-height: 1.3;
     margin-bottom: 27px;
     font-size: 21px;
+    font-weight: bold;
 }
 
 .advantages-section-text-two {
@@ -186,6 +189,125 @@ body {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
+}
+
+.features-and-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.features-list {
+    position: absolute;
+    top: 256px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.advantages-title {
+    margin-top: 48px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.features-number {
+    margin-bottom: 25px;
+}
+
+.advantage-item-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 256px;
+    padding-right: calc((100% / 3) * 2);
+    color: #ffffff;
+    background-color: #7EB5B2;
+    background-image: url("../img/sedona-town.jpg");
+    background-size: calc((100% / 3) * 2) auto;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    margin-bottom: 330px;
+}
+
+.advantage-item-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 256px;
+    padding-left: calc((100% / 3) * 2);
+    color: #ffffff;
+    background-color: #7EB5B2;
+    background-image: url("../img/devil's-bridge.jpg");
+    background-size: calc((100% / 3) * 2) auto;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+
+.advantage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    height: 256px;
+    background-color: #ffffff;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% / 3);
+    height: 330px;
+    background-color:  #ffffff;
+}
+
+.feature-house {
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 60px;
+}
+
+.feature-food {
+    background-image: url("../img/icon-food.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 60px;
+}
+
+.feature-souvenires {
+    background-image: url("../img/icon-souvenires.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 56px;
+}
+
+.features-title {
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1;
+    letter-spacing: 1px;
 }
 
 /* Hotels Search */
@@ -200,6 +322,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: 28px;
+    font-weight: bold;
     margin-bottom: 24px;
 }
 
@@ -227,7 +350,8 @@ body {
     text-transform: uppercase;
     padding-top: 30px;
     font-size: 21px;
-    padding-bottom: 27px;
+    font-weight: bold;
+    padding-bottom: 30px;
 }
 
 .search-form-body {
@@ -330,6 +454,7 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     font-size: 19px;
+    font-weight: bold;
     margin-top: 22px;
     height: 60px;
 }
