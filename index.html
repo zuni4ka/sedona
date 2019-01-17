@@ -96,14 +96,14 @@
           </p>
         </header>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
-          <button class="search-form-title button-brown">
+          <button class="search-form-button button-brown" type="button">
             Поиск гостиницы в Седоне
           </button>
-          <div class="search-form-body">
+          <div class="search-form-body search-body-hidden">
             <div class="search-form-row">
               <label class="search-form-label" for="checkin-date">Дата заезда:</label>
               <div class="input-wrap">
-                <input type="text" class="search-form-control" name="checkin-date" id="checkin-date" value="24 апреля 2019">
+                <input required type="text" class="search-form-control" name="checkin-date" id="checkin-date" value="24 апреля 2019">
                 <svg class="search-form-control-calender" fill="#D2CDA5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="22px" viewBox="0 0 21 22"
                   enable-background="new 0 0 21 22" xml:space="preserve">
@@ -131,7 +131,7 @@
             <div class="search-form-row">
               <label class="search-form-label" for="checkout-date">Дата выезда: </label>
               <div class="input-wrap">
-                <input type="text" class="search-form-control" name="checkout-date" id="checkout-date" value="30 апреля 2019">
+                <input required type="text" class="search-form-control" name="checkout-date" id="checkout-date" value="30 апреля 2019">
                 <svg class="search-form-control-calender" fill="#D2CDA5" version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="22px" viewBox="0 0 21 22"
                   enable-background="new 0 0 21 22" xml:space="preserve">
@@ -160,7 +160,7 @@
               <label class="search-form-label" for="guests-amount">Взрослые: </label>
               <div class="input-wrap">
                 <button class="search-form-add-guests-button" type="button">-</button>
-                <input type="text" class="search-form-control input-amount" name="guests-amount" id="guests-amount"
+                <input required type="text" class="search-form-control input-amount" name="guests-amount" id="guests-amount"
                   value="1">
                 <button class="search-form-add-guests-button" type="button">+</button>
               </div>
@@ -179,7 +179,9 @@
           </div>
         </form>
         <div class="search-map">
-          <img src="img/map.jpg" alt="Карта города Седона">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sde!4v1547591937156"
+          width="1200" height="490" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
         </div>
       </section>
     </main>
@@ -216,6 +218,7 @@
       </p>
     </footer>
   </div>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
