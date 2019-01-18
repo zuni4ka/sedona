@@ -42,7 +42,7 @@ body {
 .container {
     margin-right: auto;
     margin-left: auto;
-    max-width: 1200px;
+    width: 1200px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3)
 }
 
@@ -100,6 +100,7 @@ body {
 /* Navigation */
 
 .main-navigation {
+    position: relative;
     height: 56px;
     background-color: #ffffff
 }
@@ -375,7 +376,7 @@ body {
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    transition-duration: 1s;
+    transition-duration: 0.6s;
     transition-property: all;
 }
 
@@ -422,6 +423,10 @@ body {
 .search-form-control:focus {
     background-color: #ffffff;
     outline: #E6E6C5 solid 2px;
+}
+
+.search-form-control:invalid {
+    border: 1px solid red;
 }
 
 .search-form-control-calender {
@@ -1016,4 +1021,3 @@ body {
 .arrow__btn--down:focus .sorting-arrow-down {
     border-top: 10px solid #7BB4AD;
 }
-
